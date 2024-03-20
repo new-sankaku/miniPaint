@@ -1239,12 +1239,12 @@ class Text_editor_class {
 	get_complete_text() {
 		let completeText = '';
 		for (let line of this.document.lines) {
-			for (let span of line) {
-					completeText += span.text;
-			}
-			if (this.document.lines.indexOf(line) !== this.document.lines.length - 1) {
-					completeText += '\n';
-			}
+				for (let span of line) {
+						completeText += span.text;
+				}
+				if (this.document.lines.indexOf(line) !== this.document.lines.length - 1) {
+						completeText += '\n';
+				}
 		}
 		return completeText;
 	}
@@ -1635,6 +1635,7 @@ class Text_editor_class {
 		this.textBoundaryWidth = Math.max(1, Math.round(isHorizontalTextDirection ? totalTextDirectionSize : totalWrapDirectionSize));
 		this.textBoundaryHeight = Math.max(1, Math.round(isHorizontalTextDirection ? totalWrapDirectionSize : totalTextDirectionSize));
 		this.lineRenderInfo = lineRenderInfo;
+		
 	}
 
 	render(ctx, layer) {
@@ -2109,8 +2110,7 @@ class Text_class extends Base_tools_class {
 					editor.replace_entire_IME_text(beforeImeText, e.target.value);
 					this.Base_layers.render();
 					this.extend_fixed_bounds(config.layer, editor);
-				}
-				else if (config.layer) {
+				}else if (config.layer) {
 					const editor = this.get_editor(config.layer);
 					editor.insert_text_at_current_position(e.target.value);
 					e.target.value = '';
