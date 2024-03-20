@@ -43,11 +43,11 @@ const menuDefinition = [
 					}
 				]
 			},
-			{
-				name: 'Search Images',
-				ellipsis: true,
-				target: 'file/open.search'
-			},
+			// {
+			// 	name: 'Search Images',
+			// 	ellipsis: true,
+			// 	target: 'file/open.search'
+			// },
 			{
 				divider: true
 			},
@@ -140,17 +140,17 @@ const menuDefinition = [
 			{
 				name: 'Zoom',
 				children: [
-					{
-						name: 'Zoom In',
-						target: 'view/zoom.in'
-					},
-					{
-						name: 'Zoom Out',
-						target: 'view/zoom.out'
-					},
-					{
-						divider: true
-					},
+					// {
+					// 	name: 'Zoom In',
+					// 	target: 'view/zoom.in'
+					// },
+					// {
+					// 	name: 'Zoom Out',
+					// 	target: 'view/zoom.out'
+					// },
+					// {
+					// 	divider: true
+					// },
 					{
 						name: 'Original Size',
 						target: 'view/zoom.original'
@@ -166,24 +166,24 @@ const menuDefinition = [
 				shortcut: 'G',
 				target: 'view/grid.grid'
 			},
-			{
-				name: 'Guides',
-				children: [
-					{
-						name: 'Insert',
-						ellipsis: true,
-						target: 'view/guides.insert'
-					},
-					{
-						name: 'Update',
-						target: 'view/guides.update'
-					},
-					{
-						name: 'Remove all',
-						target: 'view/guides.remove'
-					}
-				]
-			},
+			// {
+			// 	name: 'Guides',
+			// 	children: [
+			// 		{
+			// 			name: 'Insert',
+			// 			ellipsis: true,
+			// 			target: 'view/guides.insert'
+			// 		},
+			// 		{
+			// 			name: 'Update',
+			// 			target: 'view/guides.update'
+			// 		},
+			// 		{
+			// 			name: 'Remove all',
+			// 			target: 'view/guides.remove'
+			// 		}
+			// 	]
+			// },
 			{
 				name: 'Ruler',
 				target: 'view/ruler.ruler'
@@ -266,24 +266,24 @@ const menuDefinition = [
 				name: 'Auto Adjust Colors',
 				shortcut: 'F',
 				target: 'image/auto_adjust.auto_adjust'
-			},
-			{
-				name: 'Decrease Color Depth',
-				target: 'image/decrease_colors.decrease_colors'
-			},
-			{
-				name: 'Color Palette',
-				ellipsis: true,
-				target: 'image/palette.palette'
-			},
-			{
-				divider: true
-			},
-			{
-				name: 'Histogram',
-				ellipsis: true,
-				target: 'image/histogram.histogram'
-			}
+			 }//,
+			// {
+			// 	name: 'Decrease Color Depth',
+			// 	target: 'image/decrease_colors.decrease_colors'
+			// },
+			// {
+			// 	name: 'Color Palette',
+			// 	ellipsis: true,
+			// 	target: 'image/palette.palette'
+			// },
+			// {
+			// 	divider: true
+			// },
+			// {
+			// 	name: 'Histogram',
+			// 	ellipsis: true,
+			// 	target: 'image/histogram.histogram'
+			// }
 		]
 	},
 	{
@@ -541,11 +541,11 @@ const menuDefinition = [
 				name: 'Pencil',
 				target: 'effects/pencil.pencil'
 			},
-			{
-				name: 'Sharpen',
-				ellipsis: true,
-				target: 'effects/sharpen.sharpen'
-			},
+			// {
+			// 	name: 'Sharpen',
+			// 	ellipsis: true,
+			// 	target: 'effects/sharpen.sharpen'
+			// },
 			{
 				name: 'Solarize',
 				target: 'effects/solarize.solarize'
@@ -747,19 +747,19 @@ const menuDefinition = [
 				name: 'Keyboard Shortcuts',
 				ellipsis: true,
 				target: 'help/shortcuts.shortcuts'
-			},
-			{
-				name: 'Report Issues',
-				href: 'https://github.com/viliusle/miniPaint/issues'
-			},
-			{
-				divider: true
-			},
-			{
-				name: 'About',
-				ellipsis: true,
-				target: 'help/about.about'
-			}
+			 }//,
+			// {
+			// 	name: 'Report Issues',
+			// 	href: 'https://github.com/viliusle/miniPaint/issues'
+			// },
+			// {
+			// 	divider: true
+			//},
+			// {
+			// 	name: 'About',
+			// 	ellipsis: true,
+			// 	target: 'help/about.about'
+			// }
 		]
 	}
 ];

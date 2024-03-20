@@ -87,11 +87,11 @@ config.TOOLS = [
 			auto_select: true,
 		},
 	},
-	{
-		name: 'selection',
-		attributes: {},
-		on_leave: 'on_leave',
-	},
+	// {
+	// 	name: 'selection',
+	// 	attributes: {},
+	// 	on_leave: 'on_leave',
+	// },
 	{
 		name: 'brush',
 		attributes: {
@@ -99,13 +99,13 @@ config.TOOLS = [
 			pressure: false,
 		},
 	},
-	{
-		name: 'pencil',
-		attributes: {
-			size: 1,
-			pressure: false,
-		},
-	},
+	// {
+	// 	name: 'pencil',
+	// 	attributes: {
+	// 		size: 1,
+	// 		pressure: false,
+	// 	},
+	// },
 	{
 		name: 'pick_color',
 		attributes: {
@@ -138,15 +138,15 @@ config.TOOLS = [
 			contiguous: false,
 		},
 	},
-	{
-		name: 'shape',
-		on_activate: 'on_activate',
-		title: 'Shapes (H)',
-		attributes: {
-			size: 3,
-			stroke: '#00aa00',
-		},
-	},
+	// {
+	// 	name: 'shape',
+	// 	on_activate: 'on_activate',
+	// 	title: 'Shapes (H)',
+	// 	attributes: {
+	// 		size: 3,
+	// 		stroke: '#00aa00',
+	// 	},
+	// },
 	{
 		name: 'line',
 		visible: false,
@@ -189,14 +189,14 @@ config.TOOLS = [
 			circle: false,
 		},
 	},
-	{
-		name: 'media',
-		title: 'Search Images',
-		on_activate: 'on_activate',
-		attributes: {
-			size: 30,
-		},
-	},
+	// {
+	// 	name: 'media',
+	// 	title: 'Search Images',
+	// 	on_activate: 'on_activate',
+	// 	attributes: {
+	// 		size: 30,
+	// 	},
+	// },
 	{
 		name: 'triangle',
 		visible: false,
@@ -436,17 +436,17 @@ config.TOOLS = [
 			radial_power: 50,
 		},
 	},
-	{
-		name: 'clone',
-		attributes: {
-			size: 30,
-			anti_aliasing: true,
-			source_layer: {
-				value: 'Current',
-				values: ['Current', 'Previous'],
-			},
-		},
-	},
+	// {
+	// 	name: 'clone',
+	// 	attributes: {
+	// 		size: 30,
+	// 		anti_aliasing: true,
+	// 		source_layer: {
+	// 			value: 'Current',
+	// 			values: ['Current', 'Previous'],
+	// 		},
+	// 	},
+	// },
 	{
 		name: 'crop',
 		on_update: 'on_params_update',
@@ -462,38 +462,38 @@ config.TOOLS = [
 			strength: 1,
 		},
 	},
-	{
-		name: 'sharpen',
-		attributes: {
-			size: 30,
-		},
-	},
-	{
-		name: 'desaturate',
-		attributes: {
-			size: 50,
-			anti_aliasing: true,
-		},
-	},
-	{
-		name: 'bulge_pinch',
-		title: 'Bulge/Pinch Tool',
-		attributes: {
-			radius: 80,
-			power: 50,
-			bulge: true,
-		},
-	},
-	{
-		name: 'animation',
-		on_activate: 'on_activate',
-		on_update: 'on_params_update',
-		on_leave: 'on_leave',
-		attributes: {
-			play: false,
-			delay: 400,
-		},
-	},
+	// {
+	// 	name: 'sharpen',
+	// 	attributes: {
+	// 		size: 30,
+	// 	},
+	// },
+	// {
+	// 	name: 'desaturate',
+	// 	attributes: {
+	// 		size: 50,
+	// 		anti_aliasing: true,
+	// 	},
+	// },
+	// {
+	// 	name: 'bulge_pinch',
+	// 	title: 'Bulge/Pinch Tool',
+	// 	attributes: {
+	// 		radius: 80,
+	// 		power: 50,
+	// 		bulge: true,
+	// 	},
+	// },
+	// {
+	// 	name: 'animation',
+	// 	on_activate: 'on_activate',
+	// 	on_update: 'on_params_update',
+	// 	on_leave: 'on_leave',
+	// 	attributes: {
+	// 		play: false,
+	// 		delay: 400,
+	// 	},
+	// },
 	{
 		name: 'polygon',
 		visible: false,
